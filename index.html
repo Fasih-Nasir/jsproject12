@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="ques1()">Question:2</button>
+    <button onclick="ques5()">Question:5</button>
+    <button onclick="ques6()">Question:6</button>
+    <button onclick="ques7()">Question:7</button> 
+  
+    <script>
+        document.write("<h3><b>Question:1</b></h3>")
+        let num=[1,2,3,4,5,6,7,8,9,10]
+        let even=[]
+        let odd=[]
+
+        for(let i=0; i<num.length;i++){
+            if(num[i] % 2 === 0  ){
+                // document.write(num[i])
+           even.push(num[i])
+            }
+            
+           else if(num[i] % 2 !== 0  ){
+                // document.write(num[i])
+           odd.push(num[i])
+            }
+            else{
+            
+            }
+        }
+        document.write("Integers ="+num+"<Br>")
+        document.write("Even Number ="+even+"<Br>")
+            document.write("Odd Number ="+odd+"<Br>")
+                // document.write("<h3><b>Question:2</b></h3>")
+function ques1(){
+                let name=prompt("Enter Your Name For A Reverse FForm")
+      
+                let re=[]
+for(let i=name.length -1 ; i>=0; i--){
+    document.write(name[i])
+    
+}
+}
+// document.write("<h3><b>Question:3</b></h3>")
+document.write("<h3><b>Question:4</b></h3>")
+let numbers = [10, 5, 20, 8, 15,25]; 
+
+for(let i=0;i<numbers.length;i++){
+    document.write(numbers[i]+",")
+    
+}
+document.write("<br>"+"In This Array The "+Math.max(...numbers)+" is a Max Number")
+document.write("<br>"+"In This Array The "+Math.min(...numbers)+" is a Min Number")
+// document.write("<h3><b>Question:5</b></h3>")
+function ques5(){
+    let name1=prompt("Enter A Name"); 
+let palindrome=name1.split("").reverse().join("")
+if(name1 === palindrome){
+    document.write(name1+" is a palidrome")
+}
+else{
+    document.write(name1+" Not palidrome")
+}
+}
+document.write("<BR>")
+    function ques6(){
+let name2=prompt("Enter A Name To Find a Vowel");
+var cwc=0;
+for(let i=0;i<name2.length;i++){
+   if(name2[i] === "a"){
+    cwc++
+   }
+   else if(name2[i] === "e"){
+    cwc++
+   }
+   else if(name2[i] === "i"){
+    cwc++
+   }
+   else if(name2[i] === "o"){
+    cwc++
+   }
+   else if(name2[i] === "u"){
+    cwc++
+   }
+
+
+}
+document.write(" The Number Of Vowel Is "+ cwc)
+    }
+    function ques7(){
+        var num2=prompt("Enter a Number For Fictorail")
+        var fr=1;
+        for(let i=1;i<=num2;i++){
+            fr=fr*i
+        }
+        document.write("The Fictorail OF "+num2+" Is a "+fr)
+    }
+    
+    document.write("<h3><b>Question:8</b></h3>")
+    let num4=[1,2,3,4,5,6]
+    let f=0;
+    // document.write(f+"<BR>")
+        for(let i=0; i<num4.length ;i++){
+            f=f+num4[i]
+            // 0=0+1
+    // 1
+}
+document.write("The Sum Of "+num4+" is = "+f)
+document.write("<h3><b>Question:9</b></h3>")
+let num5=[1,2,3,4,5,6,7,8]
+let num6=[];
+for(let i=num5.length - 1; i >= 0 ;i--){
+    num6.push(num[i])
+}
+    document.write(num5+"<BR>")
+document.write(num6)
+
+document.write("<h3><b>Question:9</b></h3>")
+// var n = 10; // Number of terms in the series
+// var num1 = 0, num2 = 1, nextTerm;
+
+// console.log("Fibonacci Series:");
+
+// for (var i = 1; i <= 10; i++) {
+// document.write(num1+"+"+"<br>");
+//     nextTerm = num1 + num2;
+//     num1 = num2;
+//     num2 = nextTerm;
+// }
+
+    </script>
+</body>
+</html>
